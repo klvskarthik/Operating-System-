@@ -5,14 +5,16 @@
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-
+karthi
 #define MSG_SIZE 100
 
 // Message structure
+ 
 struct message {
     long msg_type;       // Must be > 0
     char msg_text[MSG_SIZE];
 };
+
 
 int main() {
     // Make sure the key file exists
